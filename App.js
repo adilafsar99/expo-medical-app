@@ -1,19 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import React, {useState} from 'react';
-import { StyleSheet, View } from 'react-native';
-import {StackNavigation, TabNavigation, DrawerNavigation} from './src/config/Navigators';
+import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import AppNavigator from "./src/config/navigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <StackNavigation />
-    </View>
+    <AppNavigator />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
